@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<title>Font Test</title>
+<link rel="stylesheet" href="fonttest.css">
+<script src="fonttest.js" defer></script>
+<div id="divApp">
+ <fieldset>
+  <div>
+   <label>Family <input id="ftFamily" value="sans-serif,serif,monospace,cursive,fantasy"></label>
+   <label>Add Web Font <input id="ftAddWebfont" type="checkbox"></label>
+  </div>
+  <div>
+   <label>Size <input id="ftSize" value="20pt"></label>
+   <label>Weight <select id="ftWeight">
+    <option value="100">100 (Thin)</option>
+    <option value="200">200 (Extra Light)</option>
+    <option value="300">300 (Light)</option>
+    <option value="400" selected>400 (Normal)</option>
+    <option value="500">500 (Medium)</option>
+    <option value="600">600 (Semi Bold)</option>
+    <option value="700">700 (Bold)</option>
+    <option value="800">800 (Extra Bold)</option>
+    <option value="900">900 (Black)</option>
+   </select></label>
+   <label>Style <select id="ftStyle">
+    <option value="normal" selected>Normal</option>
+    <option value="italic">Italic</option>
+    <option value="oblique">Oblique</option>
+   </select></label>
+   <label>Width <select id="ftWidth">
+    <option value="ultra-condensed">Ultra Condensed</option>
+    <option value="extra-condensed">Extra Condensed</option>
+    <option value="condensed">Condensed</option>
+    <option value="semi-condensed">Semi Condensed</option>
+    <option value="normal" selected>Normal</option>
+    <option value="semi-expanded">Semi Expanded</option>
+    <option value="expanded">Expanded</option>
+    <option value="extra-expanded">Extra Expanded</option>
+    <option value="ultra-expanded">Ultra Expanded</option>
+   </select></label>
+   <label>Small Caps <input id="ftVariant" type="checkbox"></label>
+  </div>
+ </fieldset>
+ <fieldset id="ftWebfontPanel" hidden>
+  <div>
+   <label>Import From <select id="ftImportType">
+    <option value="css" selected>CSS Script
+    <option value="cus">Custom
+   </select></label>
+   <span id="ftSrcSpan"></span>
+   <input id="ftAddWebfontOK" type="button" value="OK">
+  </div>
+ </fieldset>
+ <fieldset>
+  <textarea id="ftTextArea">0123456789
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+,.:;!?'"(){}[]<>+-*/&|~^=\`@#$%_
+赵为青来气时会乱学习编写电机于与郁鱼语狱！
+趙為靑來氣時會亂學習編寫電機於與鬱魚語獄。
+😀😬😁😶😐🙄👻😺🙌👦👯👕🌂</textarea>
+ </fieldset>
+</div>
