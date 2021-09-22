@@ -55,3 +55,8 @@ td:nth-child(3) {
 td:nth-child(n+4) {
   width: 1.5rem;
 }
+
+.current {
+  background-color: red;
+  cursor: pointer;
+}

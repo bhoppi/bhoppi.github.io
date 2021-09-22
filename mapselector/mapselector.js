@@ -113,14 +113,12 @@ function dispCurMap() {
 	const randCheck = checks[Math.trunc(Math.random() * checks.length)];
 
 	if (curCheck) {
-		curCheck.style.backgroundColor = null;
-		curCheck.style.cursor = null;
+		curCheck.classList.remove('current');
 		curCheck.onclick = null;
 	}
+	randCheck.classList.add('current');
+	randCheck.onclick = nextMap;
 	curCheck = randCheck;
-	curCheck.style.backgroundColor = 'red';
-	curCheck.style.cursor = 'pointer';
-	curCheck.onclick = nextMap;
 	curCheck.scrollIntoView();
 }
 
