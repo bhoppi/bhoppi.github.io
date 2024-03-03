@@ -1,0 +1,93 @@
+#app {
+  font-family: sans-serif;
+  font-size: smaller;
+}
+
+.centered {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+button {
+  padding: 1px;
+  width: 5.4em;
+}
+
+.nolegend {
+  border: 0;
+}
+
+.toppanel {
+  gap: 0.9em;
+  background-color: Canvas;
+  border-radius: 6px;
+  width: fit-content;
+  margin: auto;
+  padding: 6px;
+  position: sticky;
+  top: 3px;
+}
+
+.content {
+  gap: 1.2em;
+  margin-bottom: 0.6em;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+}
+
+legend,
+label {
+  font-variant: small-caps;
+  font-weight: bold;
+  margin: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+table {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid;
+  text-align: center;
+}
+
+th {
+  font-size: smaller;
+}
+
+td:first-child {
+  font-weight: bold;
+}
+
+td:nth-child(2) {
+  font-size: smaller;
+  width: 3.3em;
+}
+
+td:nth-child(3) {
+  font-size: smaller;
+  width: 4.7em;
+}
+
+td:nth-child(n+4) {
+  width: 1.5em;
+}
+
+.current {
+  background-color: Highlight;
+  color: HighlightText;
+  cursor: pointer;
+}
+
+.obsolete {
+  background-color: GrayText;
+}

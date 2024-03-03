@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<meta name="color-scheme" content="light dark">
+<title>CS2 Random Map Selector - Workshop Maps</title>
+<link rel="stylesheet" href="mapselector.css">
+<script src="mapselector.js"></script>
+<base href="https://steamcommunity.com/sharedfiles/filedetails/" target="_blank">
+<form id="app">
+ <fieldset class="centered toppanel">
+  <button id="bt_cur" type="button">⏺️ Ongo</button>
+  <button id="bt_next" type="button" autofocus>⏭️ Next</button>
+  <button id="bt_rstq" type="button">🔀 Reset</button>
+  <button id="bt_top" type="button">⏏️ Top</button>
+ </fieldset>
+ <fieldset class="centered content">
+  <legend>CS2 Mapcore Hub Pools ({} maps in total)</legend>
+  <table>
+   <thead><tr><th>S01<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=3070766070">Mutiny</a><td>Bomb<td>23-11-03<td>✓<td>✓<td>✓<td><td><td></tr>
+   <tr><td><a href="?id=3075706807">Biome</a><td>Bomb<td>23-11-08<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=3070290240">Brewery</a><td>S.Bm<td>23-11-03<td><td><td>✓<td><td><td></tr>
+   <tr><td><a href="?id=3070923343">Pool Day</a><td>S.Bm<td>23-11-04<td>✓<td>✓<td>✓<td><td><td></tr>
+   <tr><td><a href="?id=3071005299">Assembly</a><td>S.Bm<td>23-11-04<td><td><td>✓<td><td><td></tr>
+   <tr><td><a href="?id=3071899764">Vandal</a><td>S.Bm<td>23-11-04<td>✓<td>✓<td>✓<td><td><td></tr>
+   <tr><td><a href="?id=3088473555">Orbit</a><td>S.Bm<td>23-11-19<td>✓<td><td>✓<td><td><td></tr>
+  </table>
+  <table>
+   <thead><tr><th>S01v2<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=3108513658">Akiba</a><td>Bomb<td>23-12-08<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=3116932017">Iris</a><td>Bomb<td>23-12-18<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=3121217565">Thera</a><td>Bomb<td>23-12-24<td>✓<td>✓<td><td><td><td></tr>
+  </table>
+ </fieldset>
+ <fieldset class="centered content">
+  <legend>CS2 Self Selections ({} maps in total)</legend>
+  <table>
+   <thead><tr><th>2023-1<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=3070192462">Drawbridge</a><td>S.Bm<td>23-11-03<td>✓<td>✓<td>✓<td><td><td></tr>
+   <tr><td><a href="?id=3070208661">Waterfront</a><td>S.Bm<td>23-11-03<td>✓<td>✓<td>✓<td><td><td></tr>
+   <tr><td><a href="?id=3071100532">Alexandra</a><td>Bomb<td>23-11-04<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=3073431231">Rose</a><td>Bomb<td>23-11-06<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=3075144323">Lionfort</a><td>S.Bm<td>23-11-07<td>✓<td><td>✓<td><td><td></tr>
+   <tr><td><a href="?id=3078783606">Outferno 2</a><td>Bomb<td>23-11-11<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=3079677245">Aldebaran</a><td>Bomb<td>23-11-11<td>✓<td>✓<td><td><td><td></tr>
+  </table>
+  <table>
+   <thead><tr><th>2023-2<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=3082340867">Sakura</a><td>S.Bm<td>23-11-14<td>✓<td>✓<td>✓<td><td><td></tr>
+   <tr><td><a href="?id=3083296922">Astra</a><td>Bomb<td>23-11-15<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=3085411670">Dorf</a><td>S.Bm<td>23-11-17<td><td>✓<td>✓<td><td><td></tr>
+   <tr><td><a href="?id=3107067103">Aurelia</a><td>Bomb<td>23-12-07<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=3113300441">Island</a><td>Bomb<td>23-12-14<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=3120656566">Apollo</a><td>ResQ<td>23-12-23<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=3121051997">Ravine</a><td>S.Bm<td>23-12-24<td>✓<td>✓<td>✓<td><td><td></tr>
+  </table>
+  <table>
+   <thead><tr><th>2024<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=3132372173">Cliffside</a><td>Fight<td>24-01-06<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=3132854332">Foroglio</a><td>S.Bm<td>24-01-06<td>✓<td><td>✓<td><td><td></tr>
+   <tr><td><a href="?id=3149170605">Breach</a><td>Bomb<td>24-01-28<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=3165559377">Memento</a><td>S.Bm<td>24-02-22<td>✓<td>✓<td>✓<td><td><td></tr>
+  </table>
+ </fieldset>
+ <fieldset class="centered content">
+  <legend>Unofficial CS:GO -> CS2 Ports ({} maps in total)</legend>
+  <table>
+   <thead><tr><th>Official<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=3070584943">Agency</a><td>ResQ<td>23-11-03<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=3070596702">Cache</a><td>Bomb<td>23-11-03<td>✓<td>✓<td>✓<td><td><td></tr>
+   <tr><td><a href="?id=3070598534">Canals</a><td>Bomb<td>23-11-03<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=3079692971">Aztec</a><td>Bomb<td>23-11-11<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=3085490518">Rialto</a><td>S.Bm<td>23-11-17<td>✓<td>✓<td>✓<td><td><td></tr>
+   <tr><td><a href="?id=3127729110">Dust</a><td>Bomb<td>24-01-01<td>✓<td>✓<td><td><td><td></tr>
+  </table>
+  <table>
+   <thead><tr><th>5v5 23-1<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=3070371234">Ali</a><td>Bomb<td>23-11-03<td>✓<td><td><td><td><td></tr>
+   <tr><td><a href="?id=3071395733">Downtown</a><td>ResQ<td>23-11-04<td>✓<td><td><td><td><td></tr>
+   <tr><td><a href="?id=3071414315">Favela</a><td>Bomb<td>23-11-04<td>✓<td><td><td><td><td></tr>
+   <tr><td><a href="?id=3072048070">Siege</a><td>ResQ<td>23-11-04<td>✓<td><td><td><td><td></tr>
+   <tr><td><a href="?id=3072312452">Motel</a><td>ResQ<td>23-11-05<td>✓<td><td><td><td><td></tr>
+   <tr><td><a href="?id=3072352643">Ruins</a><td>Bomb<td>23-11-05<td>✓<td><td><td><td><td></tr>
+  </table>
+  <table>
+   <thead><tr><th>5v5 23-2<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=3072397323">Seaside</a><td>Bomb<td>23-11-05<td>✓<td><td><td><td><td></tr>
+   <tr><td><a href="?id=3072481684">Thunder</a><td>ResQ<td>23-11-05<td>✓<td><td><td><td><td></tr>
+   <tr><td><a href="?id=3072618385">Chinatown</a><td>Bomb<td>23-11-05<td>✓<td><td><td><td><td></tr>
+   <tr><td><a href="?id=3073672709">Castle</a><td>Bomb<td>23-11-06<td>✓<td><td><td><td><td></tr>
+   <tr><td><a href="?id=3073712511">Bazaar</a><td>Bomb<td>23-11-06<td>✓<td><td><td><td><td></tr>
+   <tr><td><a href="?id=3073892687">Season</a><td>Bomb<td>23-11-06<td>✓<td><td><td><td><td></tr>
+  </table>
+  <table>
+   <thead><tr><th>5v5 23-3<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=3075012302">Black Gold</a><td>Bomb<td>23-11-07<td>✓<td><td><td><td><td></tr>
+   <tr><td><a href="?id=3076493217">Overgrown</a><td>Bomb<td>23-11-08<td>✓<td><td><td><td><td></tr>
+   <tr><td><a href="?id=3077752384">Rush</a><td>ResQ<td>23-11-10<td>✓<td><td><td><td><td></tr>
+   <tr><td><a href="?id=3081371934">Workout</a><td>ResQ<td>23-11-13<td>✓<td><td><td><td><td></tr>
+   <tr><td><a href="?id=3099162877">Log</a><td>Bomb<td>23-11-29<td>✓<td><td><td><td><td></tr>
+   <tr><td><a href="?id=3101352333">Zoo</a><td>Bomb<td>23-12-01<td>✓<td><td><td><td><td></tr>
+  </table>
+  <table>
+   <thead><tr><th>Wingman 23<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=3073736076">Elysion</a><td>S.Bm<td>23-11-06<td>✓<td>✓<td>✓<td><td><td></tr>
+   <tr><td><a href="?id=3078980631">Guard</a><td>S.Bm<td>23-11-11<td>✓<td>✓<td>✓<td><td><td></tr>
+  </table>
+  <table>
+   <thead><tr><th>Mapcore Hub<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=3070808044">Feast</a><td>Bomb<td>23-11-03<td>✓<td><td><td><td><td></tr>
+   <tr><td><a href="?id=3070882149">Manor</a><td>Bomb<td>23-11-04<td>✓<td><td><td><td><td></tr>
+   <tr><td><a href="?id=3070947370">Rampart</a><td>Bomb<td>23-11-04<td>✓<td><td><td><td><td></tr>
+  </table>
+ </fieldset>
+ <fieldset class="centered content">
+  <legend>CS:GO Official Adoptions ({} maps in total)</legend>
+  <table class="noselect">
+   <thead><tr><th>Payback<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=128107346">Library</a><td>S.Bm<td>13-02-19<td>✓<td>✓<td>✓<td><td>✓<td></tr>
+   <tr><td><a href="?id=127012360">Museum</a><td>ResQ<td>13-02-14<td>✓<td>✓<td><td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>Bravo<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr class="obsolete"><td><a href="?id=150267492">Chinatown</a>℗<td>Bomb<td>13-06-04<td>✓<td><td><td><td><td></tr>
+   <tr><td><a href="?id=136819520">Gwalior</a><td>Bomb<td>13-04-05<td>✓<td>✓<td><td><td><td></tr>
+   <tr class="obsolete"><td><a href="?id=152827986">Ruins</a>℗<td>Bomb<td>13-06-14<td>✓<td>✓<td><td><td><td></tr>
+   <tr class="obsolete"><td><a href="?id=125663769">Siege</a>℗<td>ResQ<td>13-02-08<td>✓<td>✓<td><td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>Phoenix<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr class="obsolete"><td><a href="?id=2714332928">Ali</a>℗<td>Bomb<td>22-01-10<td>✓<td>✓<td><td><td><td></tr>
+   <tr class="obsolete"><td><a href="?id=125689526">Downtown</a>℗<td>ResQ<td>13-02-08<td>✓<td><td><td><td><td></tr>
+   <tr class="obsolete"><td><a href="?id=123518981">Favela</a>℗<td>Bomb<td>13-01-29<td>✓<td><td><td><td><td></tr>
+   <tr class="obsolete"><td><a href="?id=122439431">Motel</a>℗<td>ResQ<td>13-01-24<td>✓<td>✓<td><td><td><td></tr>
+   <tr class="obsolete"><td><a href="?id=129816764">Thunder</a>℗<td>ResQ<td>13-02-27<td>✓<td><td><td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>2014-07<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr class="obsolete"><td><a href="?id=1855851320">Cache</a>℗<td>Bomb<td>19-09-07<td>✓<td>✓<td>✓<td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>Breakout<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr class="obsolete"><td><a href="?id=208579464">Castle</a>℗<td>Bomb<td>13-12-27<td>✓<td>✓<td><td><td>✓<td></tr>
+   <tr><td><a href="?id=236706599">Mist</a><td>Bomb<td>14-03-10<td>✓<td>✓<td><td><td><td></tr>
+   <tr class="obsolete"><td><a href="?id=182604249">Overgrown</a>℗<td>Bomb<td>13-10-01<td>✓<td>✓<td><td><td><td></tr>
+   <tr class="obsolete"><td><a href="?id=219295593">Rush</a>℗<td>ResQ<td>14-01-22<td>✓<td>✓<td><td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>Vanguard<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=125786610">Back Alley</a><td>ResQ<td>13-02-09<td>✓<td>✓<td><td><td><td></tr>
+   <tr class="obsolete"><td><a href="?id=225151817">Bazaar</a>℗<td>Bomb<td>14-02-07<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=267340686">Facade</a><td>Bomb<td>14-06-05<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=221603249">Marquis</a><td>Bomb<td>14-01-28<td>✓<td><td><td><td>✓<td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>Bloodhound<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr class="obsolete"><td><a href="?id=335595420">Log</a>℗<td>Bomb<td>14-11-02<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=251812530">Rails</a><td>Bomb<td>14-04-22<td>✓<td>✓<td><td>✓<td><td></tr>
+   <tr><td><a href="?id=401138553">Resort</a><td>Bomb<td>15-03-02<td>✓<td>✓<td><td><td><td></tr>
+   <tr class="obsolete"><td><a href="?id=322837144">Season</a>℗<td>Bomb<td>14-10-06<td>✓<td>✓<td><td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>Wildfire<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=594762114">Coast</a><td>Bomb<td>16-01-07<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=600914785">Cruise</a><td>ResQ<td>16-01-16<td>✓<td>✓<td><td>✓<td><td></tr>
+   <tr><td><a href="?id=576411037">Empire</a><td>Bomb<td>15-12-16<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=536587726">Mikla</a><td>Bomb<td>15-10-17<td>✓<td><td><td><td><td></tr>
+   <tr><td><a href="?id=371961617">Royal</a><td>Bomb<td>15-01-09<td>✓<td><td><td><td><td></tr>
+   <tr class="obsolete"><td><a href="?id=546623875">Santorini</a>℗<td>Bomb<td>15-11-02<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=580446503">Tulip</a><td>Bomb<td>15-12-21<td>✓<td>✓<td><td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>Hydra<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr class="obsolete"><td><a href="?id=802129502">Black Gold</a>℗<td>Bomb<td>16-11-19<td>✓<td>✓<td><td>✓<td>✓<td></tr>
+   <tr><td><a href="?id=632040311">Lite</a><td>Bomb<td>16-02-25<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=727934907">Thrill</a><td>Bomb<td>16-07-20<td>✓<td>✓<td><td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>2017-11<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr class="obsolete"><td><a href="?id=174668691">Agency</a>℗<td>ResQ<td>13-09-01<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=727462766">Austria</a><td>Bomb<td>16-07-19<td>✓<td>✓<td>✓<td>✓<td>✓<td></tr>
+   <tr><td><a href="?id=175459753">Insertion</a><td>ResQ<td>13-09-04<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=726359167">Shipped</a><td>Bomb<td>16-07-18<td>✓<td>✓<td><td>✓<td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>2018-10<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr class="obsolete"><td><a href="?id=1224923995">Biome</a>℗<td>Bomb<td>17-12-08<td>✓<td>✓<td>✓<td>✓<td><td></tr>
+   <tr><td><a href="?id=1318698056">Subzero</a><td>Bomb<td>18-03-03<td>✓<td>✓<td>✓<td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>2019-01<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=1215935299">Abbey</a><td>Bomb<td>17-11-30<td>✓<td>✓<td><td><td><td></tr>
+   <tr class="obsolete"><td><a href="?id=389175812">Zoo</a>℗<td>Bomb<td>15-02-08<td>✓<td>✓<td><td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>2019-04<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=1364646330">Ruby</a><td>Bomb<td>18-04-19<td>✓<td>✓<td><td>✓<td>✓<td></tr>
+   <tr class="obsolete"><td><a href="?id=293611841">Workout</a>℗<td>ResQ<td>14-07-31<td>✓<td>✓<td><td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>2019-07<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr class="obsolete"><td><a href="?id=126446777">Seaside</a>℗<td>Bomb<td>13-02-11<td>✓<td><td><td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>Shattered Web<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=1204635926">Studio</a><td>Bomb<td>17-11-19<td>✓<td>✓<td>✓<td>✓<td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>2020-03<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=1981407062">Chlorine</a><td>Bomb<td>20-01-28<td>✓<td>✓<td><td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>2020-07<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr class="obsolete"><td><a href="?id=1978052734">Mutiny</a>℗<td>Bomb<td>20-01-25<td>✓<td>✓<td>✓<td><td><td></tr>
+   <tr><td><a href="?id=1982602598">Swamp</a><td>Bomb<td>20-01-29<td>✓<td>✓<td>✓<td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>Broken Fang<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr class="obsolete"><td><a href="?id=1206809088">Apollo</a>℗<td>ResQ<td>17-11-21<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=2175304484">Engage</a><td>Bomb<td>20-07-23<td>✓<td>✓<td><td>✓<td>✓<td></tr>
+   <tr class="obsolete"><td><a href="?id=2209334999">Elysion</a>℗<td>S.Bm<td>20-08-26<td><td><td>✓<td><td><td></tr>
+   <tr class="obsolete"><td><a href="?id=2240874700">Guard</a>℗<td>S.Bm<td>20-09-27<td><td>✓<td>✓<td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>2021-05<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=1131494371">Grind</a><td>Bomb<td>17-09-10<td>✓<td>✓<td>✓<td>✓<td><td>✓</tr>
+   <tr><td><a href="?id=1986081493">Mocha</a><td>Bomb<td>20-02-02<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=2242472711">Calavera</a><td>S.Bm<td>20-09-29<td>✓<td>✓<td>✓<td>✓<td>✓<td></tr>
+   <tr><td><a href="?id=1490155704">Pitstop</a><td>S.Bm<td>18-08-24<td>✓<td><td>✓<td>✓<td>✓<td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>Riptide<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=2946717572">Basalt</a><td>Bomb<td>23-03-14<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=2395333051">Insertion II</a><td>ResQ<td>21-02-14<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=2452646645">Extraction</a><td>S.Bm<td>21-04-10<td><td><td>✓<td><td><td></tr>
+   <tr class="obsolete"><td><a href="?id=2257823084">Ravine</a>℗<td>S.Bm<td>20-10-15<td>✓<td>✓<td>✓<td>✓<td>✓<td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>2022-02<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=2537983994">Climb</a><td>ResQ<td>21-07-05<td>✓<td>✓<td><td><td><td></tr>
+   <tr class="obsolete"><td><a href="?id=1591780701">Iris</a>℗<td>Bomb<td>18-12-16<td>✓<td>✓<td><td>✓<td><td></tr>
+   <tr><td><a href="?id=1220681096">Crete</a><td>S.Bm<td>17-12-04<td>✓<td><td>✓<td><td>✓<td></tr>
+   <tr><td><a href="?id=2539316567">Hive</a><td>S.Bm<td>21-07-07<td><td><td>✓<td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>2022-08<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr class="obsolete"><td><a href="?id=2839426633">Breach</a>℗<td>Bomb<td>22-07-24<td>✓<td>✓<td>✓<td><td><td></tr>
+   <tr><td><a href="?id=2458920550">Tuscan</a><td>Bomb<td>21-04-17<td>✓<td>✓<td><td>✓<td><td></tr>
+   <tr><td><a href="?id=2791116183">Blagai</a><td>S.Bm<td>22-04-08<td>✓<td><td>✓<td><td><td></tr>
+   <tr><td><a href="?id=2821460902">Cascade</a><td>S.Bm<td>22-06-16<td><td><td>✓<td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>2022-12<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=2730672781">Boyard</a><td>S.Bm<td>22-01-25<td>✓<td><td>✓<td><td>✓<td></tr>
+   <tr><td><a href="?id=1362837520">Chalice</a><td>S.Bm<td>18-04-16<td><td>✓<td>✓<td><td>✓<td></tr>
+  </table>
+ </fieldset>
+ <fieldset class="centered content">
+  <legend>CS:GO Mapcore Hub Pools ({} maps in total)</legend>
+  <table class="noselect">
+   <thead><tr><th>Contest 2017<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=864761519">Asylum</a><td>Bomb<td>17-02-16<td>✓<td>✓<td><td>✓<td>✓<td></tr>
+   <tr><td><a href="?id=1202481627">Tangerine</a><td>Bomb<td>17-11-16<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=1216276542">Offtime</a><td>ResQ<td>17-11-30<td>✓<td><td><td><td><td></tr>
+   <tr><td><a href="?id=1216362919">Kaizen</a><td>Bomb<td>17-11-30<td>✓<td>✓<td>✓<td><td><td></tr>
+   <tr><td><a href="?id=1217279476">Sirius</a><td>Bomb<td>17-12-01<td>✓<td>✓<td><td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>5v5 S02<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=703138547">Heat 2</a><td>Bomb<td>16-06-14<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=1483645170">Waterfall</a><td>Bomb<td>18-08-18<td>✓<td>✓<td>✓<td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>5v5 S03<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=803588914">Junction</a><td>Bomb<td>16-11-21<td>✓<td>✓<td><td>✓<td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>5v5 S04<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=972609667">Scepter</a><td>Bomb<td>17-07-11<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=1217276956">Opal</a><td>Bomb<td>17-12-01<td>✓<td><td><td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>5v5 S05<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=896809104">Sanchez</a><td>Bomb<td>17-04-02<td>✓<td>✓<td><td>✓<td><td></tr>
+   <tr><td><a href="?id=1668367393">Trailerpark</a><td>Bomb<td>19-02-28<td>✓<td>✓<td><td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>5v5 S06<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=727054167">Concert</a><td>ResQ<td>16-07-19<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=891673053">Outpost</a><td>ResQ<td>17-03-26<td>✓<td>✓<td><td>✓<td><td></tr>
+   <tr><td><a href="?id=1716064469">Golden</a><td>Bomb<td>19-04-19<td>✓<td>✓<td><td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>Wingman S01<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=1486865899">Bell</a><td>S.Bm<td>18-08-21<td>✓<td><td>✓<td><td><td></tr>
+   <tr><td><a href="?id=1575910876">Eternity</a><td>S.Bm<td>18-11-27<td>✓<td>✓<td>✓<td>✓<td>✓<td></tr>
+   <tr><td><a href="?id=1590186147">Turnpike</a><td>S.Bm<td>18-12-14<td><td>✓<td>✓<td><td><td></tr>
+   <tr><td><a href="?id=1593283369">Akihabara</a><td>S.Bm<td>18-12-17<td><td>✓<td>✓<td>✓<td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>Wingman S02<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=1538485365">Rio</a><td>S.Bm<td>18-10-14<td><td><td>✓<td><td><td></tr>
+   <tr><td><a href="?id=1589183373">Station</a><td>S.Bm<td>18-12-13<td>✓<td><td>✓<td><td>✓<td></tr>
+   <tr><td><a href="?id=1686302847">Terraza</a><td>S.Bm<td>19-03-18<td><td><td>✓<td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>Wingman S03<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=1699829328">Malice</a><td>S.Bm<td>19-04-01<td>✓<td>✓<td>✓<td>✓<td>✓<td>✓</tr>
+   <tr><td><a href="?id=1894849022">Spooky Manor</a><td>ResQ<td>19-10-21<td><td><td>✓<td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>5v5 S08<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=741872158">Transit</a><td>Bomb<td>16-08-12<td>✓<td><td><td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>5v5 S09<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr class="obsolete"><td><a href="?id=1217276839">Manor</a>℗<td>Bomb<td>17-12-01<td>✓<td>✓<td><td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>Wingman S04<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=1473030310">Cleanup</a><td>S.Bm<td>18-08-10<td><td>✓<td>✓<td>✓<td>✓<td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>Contest Exotic<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr class="obsolete"><td><a href="?id=1961184536">Ivory</a>©<td>ResQ<td>20-01-06<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=1980781825">Mustang</a><td>Bomb<td>20-01-27<td>✓<td>✓<td>✓<td><td><td></tr>
+   <tr><td><a href="?id=1984417232">Victoria</a><td>Bomb<td>20-01-31<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=1984503966">Graveyard</a><td>Bomb<td>20-01-31<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=1984637676">Jingshen</a><td>Bomb<td>20-02-01<td>✓<td>✓<td>✓<td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>5v5 S10<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=1930485028">Gongji</a><td>Bomb<td>19-12-07<td>✓<td><td>✓<td><td><td></tr>
+   <tr class="obsolete"><td><a href="?id=1984227885">Feast</a>℗<td>Bomb<td>20-01-31<td>✓<td>✓<td><td>✓<td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>5v5 S11<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=1958745897">Marine</a><td>Bomb<td>20-01-04<td>✓<td>✓<td>✓<td><td><td></tr>
+   <tr><td><a href="?id=2088849446">Submerged</a><td>Bomb<td>20-05-08<td>✓<td>✓<td>✓<td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>Wingman S06<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=1561981052">Luxury</a><td>S.Bm<td>18-11-11<td><td><td>✓<td><td>✓<td></tr>
+   <tr><td><a href="?id=1587208266">Roca</a><td>S.Bm<td>18-12-10<td>✓<td><td>✓<td><td><td></tr>
+   <tr><td><a href="?id=2055152553">Kinsley</a><td>S.Bm<td>20-04-10<td><td>✓<td>✓<td>✓<td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>5v5 S12<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=404787951">Bourg</a><td>Bomb<td>15-03-09<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=2105680462">Firenze</a><td>Bomb<td>20-05-23<td>✓<td>✓<td>✓<td><td><td></tr>
+   <tr><td><a href="?id=2147266369">Gloss</a><td>Bomb<td>20-06-30<td>✓<td><td><td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>5v5 S13<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=920380705">Riverside</a><td>Bomb<td>17-05-07<td>✓<td>✓<td><td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>5S14_WS07<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=2244115642">Berth</a><td>Bomb<td>20-10-01<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=2242386354">Sunburn</a><td>S.Bm<td>20-09-29<td><td><td>✓<td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>5S15_WS08<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=1306915035">Icarus</a><td>Bomb<td>18-02-20<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=1843682152">Distillery</a><td>Bomb<td>19-08-24<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=2239575326">Pithead</a><td>S.Bm<td>20-09-26<td>✓<td>✓<td>✓<td><td><td></tr>
+   <tr><td><a href="?id=2243547004">Sawmill</a><td>S.Bm<td>20-09-30<td>✓<td>✓<td>✓<td>✓<td>✓<td></tr>
+   <tr><td><a href="?id=2244493942">Mildew</a><td>S.Bm<td>20-10-01<td>✓<td><td>✓<td><td><td></tr>
+   <tr><td><a href="?id=2538231993">Paradise</a><td>S.Bm<td>21-07-06<td><td><td>✓<td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>5S16_WS09<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=485441486">Neutron</a><td>Bomb<td>15-07-21<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=2230541612">Oyster</a><td>S.Bm<td>20-09-16<td>✓<td><td>✓<td><td><td></tr>
+   <tr><td><a href="?id=2239875817">Recovery</a><td>S.Bm<td>20-09-26<td>✓<td>✓<td>✓<td><td><td></tr>
+   <tr><td><a href="?id=2242524391">Jinja</a><td>S.Bm<td>20-09-29<td>✓<td><td>✓<td><td><td></tr>
+   <tr><td><a href="?id=2242641363">Grassetto</a><td>S.Bm<td>20-09-29<td><td><td>✓<td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>5S17_WS10<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=2229243715">Dupa</a><td>S.Bm<td>20-09-15<td>✓<td>✓<td>✓<td><td><td></tr>
+   <tr><td><a href="?id=2244265766">Deco</a><td>S.Bm<td>20-10-01<td>✓<td>✓<td>✓<td><td><td></tr>
+   <tr><td><a href="?id=2244396226">Cavelyn</a><td>S.Bm<td>20-10-01<td>✓<td>✓<td>✓<td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>5S18_WS11<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr class="obsolete"><td><a href="?id=2411829911">Karrida</a>©<td>S.Bm<td>21-03-02<td>✓<td><td>✓<td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>5S19_WS12<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr class="obsolete"><td><a href="?id=1855652898">Zenith</a>©<td>Bomb<td>19-09-07<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=2549849074">Kirov</a><td>Bomb<td>21-07-18<td>✓<td><td><td><td><td></tr>
+   <tr class="obsolete"><td><a href="?id=2550638285">Rampart</a>℗<td>Bomb<td>21-07-18<td>✓<td>✓<td><td>✓<td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>5S20_WS13<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=2633499249">Granite</a><td>S.Bm<td>21-10-21<td>✓<td>✓<td>✓<td><td>✓<td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>5S21_WS14<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=2728946194">San Juan</a><td>Bomb<td>22-01-23<td>✓<td>✓<td><td>✓<td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>5S22_WS15<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=2729322191">Lure</a><td>Bomb<td>22-01-24<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=2364400287">Stardust</a><td>ResQ<td>21-01-17<td><td><td>✓<td><td><td></tr>
+   <tr><td><a href="?id=2475401187">Summit</a><td>S.Bm<td>21-05-03<td><td><td>✓<td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>5S23_WS16<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=2758621609">Dharma</a><td>Bomb<td>22-02-20<td>✓<td>✓<td><td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>5S24_WS17<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=2844887214">Turbine</a><td>Bomb<td>22-08-05<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=2610954269">Orion</a><td>S.Bm<td>21-09-25<td>✓<td>✓<td>✓<td><td><td></tr>
+   <tr><td><a href="?id=2828167273">Delivery</a><td>S.Bm<td>22-06-30<td><td><td>✓<td><td><td></tr>
+   <tr><td><a href="?id=2841387399">Maginot</a><td>S.Bm<td>22-07-28<td><td>✓<td>✓<td>✓<td>✓<td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>5S25_WS18<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=2589884171">Expo</a><td>S.Bm<td>21-08-31<td><td>✓<td>✓<td><td><td></tr>
+   <tr><td><a href="?id=2879544186">Gracia</a><td>S.Bm<td>22-10-25<td>✓<td><td>✓<td><td><td></tr>
+   <tr><td><a href="?id=2891200262">Palais</a><td>S.Bm<td>22-11-21<td>✓<td><td>✓<td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>5S26_WS19<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=2530584359">Romano</a><td>S.Bm<td>21-06-28<td><td><td>✓<td><td><td></tr>
+   <tr><td><a href="?id=2774777544">Payday</a><td>S.Bm<td>22-03-07<td><td><td>✓<td><td><td></tr>
+   <tr><td><a href="?id=2922783093">Shred</a><td>S.Bm<td>23-01-24<td><td><td>✓<td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>5S27_WS20<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=2954659602">Zen</a><td>Bomb<td>23-03-30<td>✓<td>✓<td><td>✓<td><td></tr>
+   <tr><td><a href="?id=2932171860">Arco</a><td>S.Bm<td>23-02-12<td>✓<td>✓<td>✓<td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>5S28_WS21<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=2955084102">Shore</a><td>Bomb<td>23-03-31<td>✓<td>✓<td><td>✓<td>✓<td></tr>
+   <tr><td><a href="?id=2960054852">Aztra</a><td>Bomb<td>23-04-09<td>✓<td>✓<td><td><td><td></tr>
+  </table>
+ </fieldset>
+ <fieldset class="centered content">
+  <legend>CS:GO Self Selections ({} maps in total)</legend>
+  <table class="noselect">
+   <thead><tr><th>2013<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=127132324">Elysium</a><td>Bomb<td>13-02-15<td>✓<td>✓<td><td><td>✓<td></tr>
+   <tr><td><a href="?id=148027212">Print</a><td>Bomb<td>13-05-27<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=162368406">Compound</a><td>ResQ<td>13-07-22<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=172992844">Frost</a><td>Bomb<td>13-08-26<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=176444499">Chess</a><td>Fight<td>13-09-07<td>✓<td>✓<td><td>✓<td><td></tr>
+   <tr><td><a href="?id=198146855">Isku</a><td>ResQ<td>13-11-26<td>✓<td>✓<td><td>✓<td>✓<td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>2014<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=215722529">Lodge</a><td>Bomb<td>14-01-12<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=265372761">Haven</a><td>Bomb<td>14-05-31<td>✓<td>✓<td><td>✓<td>✓<td></tr>
+   <tr><td><a href="?id=269598277">Sparity</a><td>Bomb<td>14-06-11<td>✓<td>✓<td><td><td>✓<td></tr>
+   <tr><td><a href="?id=273415773">Hijack</a><td>ResQ<td>14-06-21<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=290705649">Typhoon</a><td>Bomb<td>14-07-24<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=298610418">Pripyat</a><td>Bomb<td>14-08-11<td>✓<td>✓<td><td>✓<td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>2015<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=455840012">Venezia</a><td>Bomb<td>15-06-06<td>✓<td><td><td><td><td></tr>
+   <tr><td><a href="?id=497563692">Abyss</a><td>Bomb<td>15-08-11<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=503867814">High Ground</a><td>Bomb<td>15-08-22<td>✓<td>✓<td><td>✓<td><td></tr>
+   <tr><td><a href="?id=509518815">Kharkov</a><td>Bomb<td>15-08-31<td>✓<td>✓<td><td>✓<td>✓<td></tr>
+   <tr><td><a href="?id=545743980">Dynasty</a><td>Bomb<td>15-11-01<td>✓<td><td><td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>2016<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=599577239">Garrison</a><td>Bomb<td>16-01-13<td>✓<td>✓<td><td>✓<td>✓<td></tr>
+   <tr><td><a href="?id=696045180">Fortress</a><td>Bomb<td>16-06-03<td>✓<td><td><td><td><td></tr>
+   <tr><td><a href="?id=707503558">Calamari</a><td>Bomb<td>16-06-21<td>✓<td>✓<td>✓<td><td>✓<td></tr>
+   <tr><td><a href="?id=719528723">Pharaoh</a><td>Bomb<td>16-07-07<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=745037956">Republic</a><td>Bomb<td>16-08-16<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=777397261">Fasthold</a><td>Bomb<td>16-10-09<td>✓<td>✓<td><td>✓<td>✓<td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>2017<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=842297085">Portugal</a><td>Bomb<td>17-01-15<td>✓<td>✓<td><td><td><td></tr>
+   <tr><td><a href="?id=937775259">Saint</a><td>Bomb<td>17-06-02<td>✓<td><td><td><td><td></tr>
+   <tr><td><a href="?id=948772449">Timber</a><td>S.Bm<td>17-06-17<td><td><td><td><td>✓<td></tr>
+   <tr><td><a href="?id=949261494">Skyscraper</a><td>S.Bm<td>17-06-18<td>✓<td>✓<td><td>✓<td>✓<td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>2018<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=1317130948">Killhouse</a><td>S.Bm<td>18-03-02<td><td><td>✓<td><td><td></tr>
+   <tr><td><a href="?id=1477762277">Renovation</a><td>ResQ<td>18-08-13<td>✓<td>✓<td>✓<td>✓<td>✓<td></tr>
+   <tr><td><a href="?id=1590058182">Grid</a><td>S.Bm<td>18-12-14<td><td><td>✓<td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>2019<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=1623993297">Chlore</a><td>S.Bm<td>19-01-14<td>✓<td><td>✓<td><td><td></tr>
+   <tr><td><a href="?id=1721338314">Bregov</a><td>Bomb<td>19-04-23<td>✓<td><td><td><td><td></tr>
+   <tr><td><a href="?id=1791121285">Neighbors</a><td>Bomb<td>19-07-04<td>✓<td>✓<td><td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>2020<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=2240192169">Hanok</a><td>S.Bm<td>20-09-27<td><td><td>✓<td><td><td></tr>
+   <tr><td><a href="?id=2240950447">Offshore</a><td>S.Bm<td>20-09-27<td>✓<td>✓<td>✓<td>✓<td>✓<td></tr>
+   <tr><td><a href="?id=2241358015">Aurora</a><td>S.Bm<td>20-09-28<td><td>✓<td>✓<td><td><td></tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>2021<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=2484335179">Outferno</a><td>Bomb<td>21-05-12<td>✓<td>✓<td><td>✓<td>✓<td>✓</tr>
+   <tr><td><a href="?id=2664747046">Vara</a><td>Bomb<td>21-11-27<td>✓<td>✓<td><td>✓<td>✓<td>✓</tr>
+  </table>
+  <table class="noselect">
+   <thead><tr><th>2022<th>Goal<th>Release<th>Cl<th>Dt<th>Wi<th>Ar<th>Dl<th>Fs</thead>
+   <tr><td><a href="?id=2902882388">Rainfall</a><td>S.Bm<td>22-12-17<td>✓<td><td>✓<td><td><td></tr>
+  </table>
+ </fieldset>
+ <label id="workshop" class="centered">Summary: {} map subscriptions in total</label>
+</form>

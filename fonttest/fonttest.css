@@ -1,0 +1,22 @@
+#divApp {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+
+label { margin-right: 26px; }
+
+#ftFamily {
+  margin-right: 100px;
+  width: 600px;
+}
+
+#ftSize { width: 120px; }
+#ftURL { width: 400px; }
+#ftSrcName { width: 200px; }
+
+#ftTextArea {
+  height: 500px;
+  resize: vertical;
+  width: 100%;
+}
