@@ -23,7 +23,7 @@ function initStyle() {
 	let total = 0;
 	const legends = document.querySelectorAll('legend');
 	legends.forEach(e => {
-		const titleTds = e.parentElement.querySelectorAll('tr:not(.obsolete) td:first-child');
+		const titleTds = e.parentElement.querySelectorAll('tr:not(.obsolete,.incompat) td:first-child');
 		const len = titleTds.length;
 		e.textContent = e.textContent.replace('{}', len);
 		total += len;
@@ -45,7 +45,7 @@ function initStyle() {
 function initData() {
 	mapObj = {};
 	mapLen = 0;
-	const validTds = document.querySelectorAll('table:not(.noselect) tr:not(.obsolete) td:first-child');
+	const validTds = document.querySelectorAll('table:not(.noselect) td:first-child');
 	validTds.forEach(e => {
 		const map = e.firstChild.textContent;
 		mapObj[map] = e.parentElement;

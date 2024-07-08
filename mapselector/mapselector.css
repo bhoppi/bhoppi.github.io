@@ -1,3 +1,7 @@
+:root {
+  color-scheme: light dark;
+}
+
 #app {
   font-family: sans-serif;
   font-size: smaller;
@@ -89,5 +93,21 @@ td:nth-child(n+4) {
 }
 
 .obsolete {
-  background-color: GrayText;
+  background-color: light-dark(#707070, #8f8f8f);
+}
+
+.obsolete td:first-child::after {
+  content: '℗';
+  text-align: right;
+  float: right;
+}
+
+.incompat {
+  background-color: light-dark(#b0b0b0, #4f4f4f);
+}
+
+.incompat td:first-child::after {
+  content: '©';
+  text-align: right;
+  float: right;
 }
