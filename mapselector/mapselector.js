@@ -20,6 +20,8 @@ function initStyle() {
 	style.textContent = `th:first-child{box-sizing:border-box;width:${maxWidth}px;}`;
 	document.head.appendChild(style);
 
+	document.querySelectorAll('.noselect:not(:has(tbody>tr:not(.obsolete)))').forEach(e => e.classList.add('obsolete'));
+
 	let total = 0;
 	const legends = document.querySelectorAll('legend');
 	legends.forEach(e => {
